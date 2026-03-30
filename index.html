@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Personal Profile | LinkedIn Style</title>
+    <style>
+        /* Base styles (LinkedIn style) */
+        body {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f6f8; /* LinkedIn's gray background */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header and banner */
+        header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 30px;
+            border: 4px solid #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header-info {
+            flex: 1;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin: 0 0 10px;
+            color: #0073b1; /* LinkedIn blue */
+        }
+
+        .headline {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .contact-info span {
+            margin-right: 15px;
+        }
+
+        .contact-info a {
+            color: #0073b1;
+            text-decoration: none;
+        }
+
+        /* Content blocks */
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #333;
+            border-bottom: 2px solid #0073b1;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* About */
+        .summary p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Experience & Education */
+        .experience-item, .education-item {
+            margin-bottom: 25px;
+        }
+
+        .item-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .item-subtitle {
+            font-size: 16px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .item-date {
+            font-size: 14px;
+            color: #999;
+            margin-top: 2px;
+        }
+
+        .item-description {
+            margin-top: 10px;
+            color: #555;
+            font-size: 15px;
+        }
+
+        /* Skills */
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills-list li {
+            background-color: #e0f0f8;
+            color: #0073b1;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #888;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 30px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-photo {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="profile-photo">
+            <img src="images/345.jpg" alt="Professional Photo">
+        </div>
+        <div class="header-info">
+            <h1> 朱氏海璃(haily)</h1>
+            <div class="contact-info">
+                <span>📍 Taipei, Taiwan</span>
+                <span>📞 +886 983 012 078</span>
+                <span>📧 <a href="mailto:bd1131034@venus.lit.edu.tw">bd1131034@venus.lit.edu.tw</a></span>
+                <span>🔗 <a href="https://www.linkedin.com/in/tranthilan" target="_blank">LinkedIn Profile</a></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="summary">
+            <h2>About Me</h2>
+            <p>I am a Senior Full-Stack Engineer with over 8 years of experience, passionate about creating efficient, reliable web applications with excellent user experience. I specialize in React, Node.js, and microservices architecture, and have led teams to complete multiple large-scale projects in agile environments. I am committed to continuous learning and converting new technologies into business value.</p>
+        </section>
+
+        <section class="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <p class="item-title">Senior Full-Stack Engineer</p>
+                <p class="item-subtitle">Innovative Tech Co., Ltd. | March 2018 - Present</p>
+                <p class="item-description">
+                    - Led the design and implementation of the company's flagship e-commerce platform microservices architecture, improving system scalability by 50%.<br>
+                    - Redesigned the front-end interface using React and Redux, increasing user retention by 20%.<br>
+                    - Responsible for optimizing Node.js APIs, reducing response time by 30%.<br>
+                    - Mentored 3 junior engineers.
+                </p>
+            </div>
+            <div class="experience-item">
+                <p class="item-title">Software Engineer</p>
+                <p class="item-subtitle">Cloud Solutions Ltd. | July 2015 - February 2018</p>
+                <p class="item-description">
+                    - Developed and maintained RESTful APIs using Python/Django.<br>
+                    - Implemented front-end and back-end integration to ensure data flow consistency.<br>
+                    - Participated in daily stand-up meetings and Sprint planning.
+                </p>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <p class="item-title">Master of Science in Computer Science and Information Engineering</p>
+                <p class="item-subtitle">National Taiwan University | September 2013 - June 2015</p>
+                <p class="item-date">Thesis: Machine Learning-Based Network Traffic Prediction</p>
+            </div>
+            <div class="education-item">
+                <p class="item-title">Bachelor of Science in Information Management</p>
+                <p class="item-subtitle">National Chengchi University | September 2009 - June 2013</p>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>Docker</li>
+                <li>AWS</li>
+                <li>Microservices</li>
+                <li>GraphQL</li>
+                <li>Agile</li>
+                <li>Team Leadership</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 朱氏海璃 (haily). All rights reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>
